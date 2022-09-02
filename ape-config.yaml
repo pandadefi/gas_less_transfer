@@ -1,0 +1,19 @@
+name: signature
+
+plugins:
+  - name: etherscan
+  - name: infura
+  - name: hardhat
+  - name: ledger
+
+hardhat:
+  port: auto
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: infura
+
+ethereum:
+  default_network: local
+  local:
+    default_provider: hardhat
